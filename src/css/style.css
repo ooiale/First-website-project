@@ -1,0 +1,204 @@
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+main::after {
+    content: "(❁´◡`❁)";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    min-width: 80vw;
+}
+
+
+main .character {
+    display: none;
+    height: 100vh;
+
+}
+
+main .character.selected {
+    display: block;
+}
+
+main .character .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+main .character.lapis .content {
+    left: 45%;
+    top: 40%;
+}
+
+main .character.lapis .content .description {
+    color: rgb(135, 135, 245);
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (0-1) for the desired opacity */
+    border-radius: 4%;
+}
+main .character.lapis .content .character-name {
+    color: rgb(78, 0, 151);
+    margin-bottom: 5px;
+
+}
+main .character.lapis .logo {
+    position: absolute;
+    right: 11%;
+    top: -4%;
+}
+
+main .character.roselia .content .character-name {
+    color: #660000;
+}
+main .character.roselia .content .description {
+    color: #ff004ce4;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust the alpha value (0-1) for the desired opacity */
+    border-radius: 4%;
+}
+
+main .character.rufus .image.rufus {
+    object-fit: contain;
+}
+main .character.rufus .content .description {
+    color: #caf86e;
+}
+main .character.rufus .content .character-name {
+    color: rgb(107, 246, 107);
+}
+
+main .character .image.renne {
+    object-fit: contain;
+}
+main .character.renne .content .description {
+    color: #fe79ee;
+}
+main .character.renne .content .character-name {
+    color: rgb(251, 7, 182);
+}
+
+main .character .image.grandmaster {
+    object-fit: contain;
+}
+main .character.grandmaster .content .description {
+    color: #ffffff;
+}
+main .character.grandmaster .content .character-name {
+    color: rgb(255, 255, 255);
+}
+main .character.grandmaster .content {
+    left: 5%;
+    top: 5%;
+}
+.blue-text {
+    color: blue;
+}
+
+.pink-text {
+    color: rgb(239, 100, 175);
+}
+
+
+main .character .content {
+    position: absolute;
+    top: 100px;
+    left: 120px;
+
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    min-height: 100vh;
+    max-width: 380px;
+    z-index: 1; /*ficar por cima de tudo*/
+}
+
+main .character .content .character-name {
+    color: white;
+    font-size: 48px;
+    font-family: 'Secular One';
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+main .character .content .description {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Rubik";
+    line-height: 24px;
+}
+
+main .character .content .logo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95px;
+    width: 230px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    position: fixed;
+    top: 0;
+    right: 100px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    overflow: hidden;
+}
+
+.buttons img {
+    width: 100%; /* This ensures the image scales proportionally */
+    height: auto; /* Maintains aspect ratio */
+  }
+
+.buttons .button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.buttons .button img {
+    border-radius: 50%;
+}
+
+.buttons .button.selected {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgb(0, 255, 26);
+    border-radius: 100%;
+}
+
+.button.renne img {
+    height: 85px;
+}
+
+.button.roselia img {
+    width: 80px; /* Adjust the width to increase the size */
+}
+
+.button.rufus img {
+    width: 85px; /* Adjust the width to increase the size */
+    
+}
+
+.button.hajimari img {
+    width: 75px; /* Adjust the width to increase the size */
+    background-repeat: no-repeat;
+}
+
+.button.lapis img {
+    width: 75px; /* Adjust the width to increase the size */
+}
+
